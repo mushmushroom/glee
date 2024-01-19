@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in to account</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body> 
+<header class="header">
+  <div class="container-wide">
+    <div class="header__wrapper">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo" width="146" height="39">
+      </a>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="shop.html">Catalog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-nav">
+        <a class="user-nav__link user-nav__link--search" href="#">
+          <span class="sr-only">Search on the website</span>
+        </a>
+        <div class="user-nav__box">
+          <a class="user-nav__link user-nav__link--favorite" href="#">
+            <div class="user-nav__num">0
+              <span class="sr-only">Add to favorite</span>
+            </div>
+          </a>
+          <a class="user-nav__link user-nav__link--cart" href="#">
+            <div class="user-nav__num">0
+              <span class="sr-only">Add to cart</span>
+            </div>
+          </a>
+        </div>
+        <button class="user-nav__link user-nav__link--menu" type="button">
+          <span class="sr-only">Open the menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="breadcrumbs__title">Log in</h2>
+        <div class="breadcrumbs__box">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            
+              
+            
+            
+            
+        <li class="breadcrumbs__item">Log in</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="modal">
+  <div class="container">
+    <h2 class="sr-only">Log in form</h2>
+    <div class="modal__wrapper">
+      <form class="modal__form" action="#">
+      <label class="modal__label" for="modal_username">
+        Username or email address *
+      </label>
+      <input class="modal__input" type="text" id="modal_username" name="modal_username" required>
+
+      <label class="modal__label" for="modal_pass">
+        Password *
+      </label>
+      <input class="modal__input" type="password" id="modal_pass" name="modal_pass" required>
+
+      <button class="btn btn--dark modal__btn" type="submit"> Login</button>
+
+     <div class="modal__box">
+      <div class="modal__remember-box">
+         <input type="checkbox" id="modal_remember">
+      <label class="modal__label modal__label--remember" for="modal_remember">Remember me</label>
+      </div>
+
+      <a class="modal__link" href="#">Lost your password?</a>
+     </div>
+      
+    </form>
+
+    <span class="modal__text" href="#">Not registered? No problem</span>
+    <a class="btn btn--light modal__btn-create" href="#">Create an account</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__box footer__box-contact">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo" width="148" height="39">
+        </a>
+        <div class="footer__contact">
+          <span>address:</span>
+          4772 Wines Lane Houston, TX 77032
+        </div>
+        <div class="footer__contact">
+          <span>telephone:</span>
+          +832-347-5843
+        </div>
+        <div class="footer__contact">
+          <span>email:</span>
+          contact@Glee.com
+        </div>
+      </div>
+      <div class="footer__box">
+        <h5 class="footer__title">Services</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Return policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="blog.html">Our blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="contact.html">Contact us</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="tos.html">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <h6 class="footer__title">account</h6>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="login.html">Your account</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Checkout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box footer__box-form">
+        <h5 class="footer__title">Newsletter</h5>
+        <p class="footer__descr">Subscribe by our newsletter and get update protidin.</p>
+        <form class="footer__form" action="#">
+          <label class="sr-only" for="form_email">E-mail</label>
+          <input class="footer__input" type="email" name="email" id="form_email" placeholder="Email address" required>
+          <button class="btn footer__btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">©2020 CopyRight Example. All rights reserved.</div>
+      <ul class="footer__bottom-list">
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="index.html">Home</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="blog.html">Blog</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>   <script src="js/main.min.js"></script>
+  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBSfjMT3dtcvGDf-ZfX6G5OvSaX83bNfqM", v: "weekly"});</script>
+</body>
+
+</html>

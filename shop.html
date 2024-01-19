@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee | Shop page</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="container-wide">
+    <div class="header__wrapper">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo" width="146" height="39">
+      </a>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="shop.html">Catalog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-nav">
+        <a class="user-nav__link user-nav__link--search" href="#">
+          <span class="sr-only">Search on the website</span>
+        </a>
+        <div class="user-nav__box">
+          <a class="user-nav__link user-nav__link--favorite" href="#">
+            <div class="user-nav__num">0
+              <span class="sr-only">Add to favorite</span>
+            </div>
+          </a>
+          <a class="user-nav__link user-nav__link--cart" href="#">
+            <div class="user-nav__num">0
+              <span class="sr-only">Add to cart</span>
+            </div>
+          </a>
+        </div>
+        <button class="user-nav__link user-nav__link--menu" type="button">
+          <span class="sr-only">Open the menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="breadcrumbs__title">Shop page</h2>
+        <div class="breadcrumbs__box">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            
+              
+            
+            
+            
+        <li class="breadcrumbs__item">Shop page</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="shop">
+    <div class="container">
+      <div class="shop__inner">
+        <div class="shop__filters shop-filter">
+
+          <div class="shop-filter__box filter-category">
+            <h3 class="shop-filter__title" id="category">category</h3>
+            <ul class="shop-filter__list">
+              <li class="shop-filter__item">
+                <label class="shop-filter__label filter-category__label" for="category1">
+                  <input class="shop-filter__input" type="checkbox" id="category1">
+                  <span class="shop-filter__checkbox">Chair</span>
+                </label>
+              </li>
+              <li class="shop-filter__item">
+                <label class="shop-filter__label filter-category__label" for="category2">
+                  <input class="shop-filter__input" type="checkbox" id="category2">
+                  <span class="shop-filter__checkbox">Table</span>
+                </label>
+              </li>
+
+              <li class="shop-filter__item">
+                <label class="shop-filter__label filter-category__label" for="category3">
+                  <input class="shop-filter__input" type="checkbox" id="category3">
+                  <span class="shop-filter__checkbox">Lamp</span>
+                </label>
+              </li>
+
+              <li class="shop-filter__item">
+                <label class="shop-filter__label filter-category__label" for="category4">
+                  <input class="shop-filter__input" type="checkbox" id="category4">
+                  <span class="shop-filter__checkbox">Clock</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="shop-filter__box filter-price">
+            <h3 class="shop-filter__title" id="price">price</h3>
+
+            <div class="filter-price__wrapper">
+              <label class="sr-only" for="price-slider">Price slider</label>
+              <input type="text" class="filter-price__input" name="price_range" id="price-slider" value="0"
+                data-min="20" data-max="1000" data-from="100" data-to="500" />
+              <div class="filter-price__box">
+                <span>$<span class="filter-price__from"></span></span>
+                <span>$<span class="filter-price__to"></span></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="shop-filter__box filter-brand">
+            <h3 class="shop-filter__title" id="brand">brand</h3>
+            <ul class="shop-filter__list">
+              <li class="shop-filter__item">
+                <label class="shop-filter__label" for="brand1">
+                  <input class="shop-filter__input filter-brand__input" type="checkbox" id="brand1">
+                  <span class="shop-filter__checkbox filter-brand__checkbox">
+                    <span>RFL</span>
+                    <span>(10)</span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="shop-filter__item">
+                <label class="shop-filter__label" for="brand2">
+                  <input class="shop-filter__input filter-brand__input" type="checkbox" id="brand2">
+                  <span class="shop-filter__checkbox filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <span>(21)</span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="shop-filter__item">
+                <label class="shop-filter__label" for="brand3">
+                  <input class="shop-filter__input filter-brand__input" type="checkbox" id="brand3">
+                  <span class="shop-filter__checkbox filter-brand__checkbox">
+                    <span>Regal</span>
+                    <span>(3)</span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="shop-filter__item">
+                <label class="shop-filter__label" for="brand4">
+                  <input class="shop-filter__input filter-brand__input" type="checkbox" id="brand4">
+                  <span class="shop-filter__checkbox filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <span>(14)</span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="shop-filter__item">
+                <label class="shop-filter__label" for="brand5">
+                  <input class="shop-filter__input filter-brand__input" type="checkbox" id="brand5">
+                  <span class="shop-filter__checkbox filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <span>(6)</span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="shop-filter__box filter-recent">
+            <h3 class="shop-filter__title" id="recent">recent products</h3>
+            <ul class="shop-filter__list filter-recent__list">
+              <li class="shop-filter__item filter-recent__item">
+                <a class="shop-filter__card-link" href="#">
+                  <article class="recent-card">
+  <div class="recent-card__img-box">
+    <img class="recent-card__img" src="images/feature1.png" alt="chair" width="68" height="68">
+  </div>
+
+  <div class="recent-card__info">
+    <h3 class="recent-card__title">Wooden lamp</h3>
+    <div class="recent-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="recent-card__price">$29.00</div>
+
+  </div>
+</article>
+                </a>
+              </li>
+
+              <li class="shop-filter__item filter-recent__item">
+                <a class="shop-filter__card-link" href="#">
+                  <article class="recent-card">
+  <div class="recent-card__img-box">
+    <img class="recent-card__img" src="images/feature2.png" alt="chair" width="68" height="68">
+  </div>
+
+  <div class="recent-card__info">
+    <h3 class="recent-card__title">Modern lamp</h3>
+    <div class="recent-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="recent-card__price">$29.00</div>
+
+  </div>
+</article>
+                </a>
+              </li>
+          </div>
+        </div>
+
+        <div class="shop__content">
+  <div class="shop__content-btns">
+    <button class="shop__content-btn shop__content-grid-view shop__content-btn--active" type="button">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#grid-icon"></use>
+      </svg>
+      <span class="sr-only">Grid view</span>
+    </button>
+    <button class="shop__content-btn shop__content-list-view" type="button">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#list-icon"></use>
+      </svg>
+      <span class="sr-only">List view</span>
+    </button>
+
+    <button class="shop__content-btn shop__content-filters" type="button">
+      <svg width="30" height="30">
+        <use xlink:href="images/sprite.svg#filters"></use>
+      </svg>
+      <span class="sr-only">Open filters</span>
+    </button>
+  </div>
+
+  <ul class="shop__content-list">
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/1.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/2.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">White chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/8.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/3.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/4.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/5.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/new/new2.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/new/new3.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$43.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+    <li class="shop__content-item">
+      <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/new/new4.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Retro table</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$43.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+    </li>
+
+
+
+  </ul>
+
+  <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item pagination__item--active">
+                1
+              </li>
+
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+            </ul>
+
+            <a class="pagination__item pagination__next" href="#">Next</a>
+          </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__box footer__box-contact">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo" width="148" height="39">
+        </a>
+        <div class="footer__contact">
+          <span>address:</span>
+          4772 Wines Lane Houston, TX 77032
+        </div>
+        <div class="footer__contact">
+          <span>telephone:</span>
+          +832-347-5843
+        </div>
+        <div class="footer__contact">
+          <span>email:</span>
+          contact@Glee.com
+        </div>
+      </div>
+      <div class="footer__box">
+        <h5 class="footer__title">Services</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Return policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="blog.html">Our blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="contact.html">Contact us</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="tos.html">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <h6 class="footer__title">account</h6>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="login.html">Your account</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Checkout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box footer__box-form">
+        <h5 class="footer__title">Newsletter</h5>
+        <p class="footer__descr">Subscribe by our newsletter and get update protidin.</p>
+        <form class="footer__form" action="#">
+          <label class="sr-only" for="form_email">E-mail</label>
+          <input class="footer__input" type="email" name="email" id="form_email" placeholder="Email address" required>
+          <button class="btn footer__btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">©2020 CopyRight Example. All rights reserved.</div>
+      <ul class="footer__bottom-list">
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="index.html">Home</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="blog.html">Blog</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>   <script src="js/main.min.js"></script>
+  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBSfjMT3dtcvGDf-ZfX6G5OvSaX83bNfqM", v: "weekly"});</script>
+</body>
+
+</html>

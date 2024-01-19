@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee | Product page</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="container-wide">
+    <div class="header__wrapper">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo" width="146" height="39">
+      </a>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="shop.html">Catalog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-nav">
+        <a class="user-nav__link user-nav__link--search" href="#">
+          <span class="sr-only">Search on the website</span>
+        </a>
+        <div class="user-nav__box">
+          <a class="user-nav__link user-nav__link--favorite" href="#">
+            <div class="user-nav__num">0
+              <span class="sr-only">Add to favorite</span>
+            </div>
+          </a>
+          <a class="user-nav__link user-nav__link--cart" href="#">
+            <div class="user-nav__num">0
+              <span class="sr-only">Add to cart</span>
+            </div>
+          </a>
+        </div>
+        <button class="user-nav__link user-nav__link--menu" type="button">
+          <span class="sr-only">Open the menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="breadcrumbs__title">Product Details</h2>
+        <div class="breadcrumbs__box">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            
+              
+            
+            
+            
+        <li class="breadcrumbs__item">Product Details</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="product">
+    <div class="container">
+      <div class="product-item">
+
+        <div class="product-item__inner">
+  <div class="product-item__slider">
+
+    <ul class="product-item__thumb-list">
+      <li class="product-item__thumb-item">
+        <img class="product-item__thumb-img" src="images/product/1.jpg" alt="lamp">
+      </li>
+      <li class="product-item__thumb-item">
+        <img class="product-item__thumb-img" src="images/product/2.jpg" alt="lamp">
+      </li>
+      <li class="product-item__thumb-item">
+        <img class="product-item__thumb-img" src="images/product/3.jpg" alt="lamp">
+      </li>
+      <li class="product-item__thumb-item">
+        <img class="product-item__thumb-img" src="images/product/4.jpg" alt="lamp">
+      </li>
+    </ul>
+
+
+    <ul class="product-item__big-list">
+      <li class="product-item__big-item">
+        <img class="product-item__big-img" src="images/product/1.jpg" alt="lamp">
+      </li>
+      <li class="product-item__big-item">
+        <img class="product-item__big-img" src="images/product/2.jpg" alt="lamp">
+      </li>
+      <li class="product-item__big-item">
+        <img class="product-item__big-img" src="images/product/3.jpg" alt="lamp">
+      </li>
+      <li class="product-item__big-item">
+        <img class="product-item__big-img" src="images/product/4.jpg" alt="lamp">
+      </li>
+    </ul>
+  </div>
+
+  <div class="product-item__content">
+    <h3 class="product-item__title">Pendant lamp</h3>
+    <div class="product-item__rating" data-rateyo-rating="4"></div>
+    <div class="product-item__price">23$</div>
+    <div class="product-item__descr">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+    </div>
+    <form class="product-item__form" action="#">
+      <div class="product-item__quantity">
+        <button class="product-item__num product-item__num-del" type="button">
+          <span class="sr-only">decrease the number of products</span>
+        </button>
+        <label class="sr-only" for="num">Quantity of a product</label>
+        <input class="product-item__input" type="number" value="1" min="1" id="num" required>
+        <button class="product-item__num product-item__num-add" type="button">
+          <span class="sr-only">increase the number of products</span>
+        </button>
+      </div>
+      <button class="product-item__btn btn btn--dark" type="submit">Add to cart</button>
+    </form>
+
+    <ul class="product-item__info-list">
+      <li class="product-item__info-item">
+        <div class="product-item__category">SKU:</div>
+        <div class="product-item__value">014</div>
+      </li>
+
+      <li class="product-item__info-item">
+        <div class="product-item__category">Category:</div>
+        <div class="product-item__value">Lights</div>
+      </li>
+
+      <li class="product-item__info-item">
+        <div class="product-item__category">Tag:</div>
+        <div class="product-item__value">Decorative</div>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+        <div class="product-tabs">
+  <ul class="product-tabs__list">
+    <li class="product-tabs__item active">
+      <a class="product-tabs__link" href="">Description</a>
+    </li>
+
+    <li class="product-tabs__item">
+      <a class="product-tabs__link" href="">Additional Information</a>
+    </li>
+
+    <li class="product-tabs__item">
+      <a class="product-tabs__link" href="">Reviews (<span>2</span>)</a>
+    </li>
+  </ul>
+
+  <div class="product-tabs__content">
+    <div class="product-tabs__box active">
+      <p>
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+    <div class="product-tabs__box">
+      <p>
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+    <div class="product-tabs__box">
+      <div class="comments">
+        <div class="comments__wrapper">
+          <div class="comments__box">
+            <img class="comments__img" src="images/user1.jpg" alt="user image" width="100" height="100">
+            <div class="comments__box-info">
+              <div class="comments__info-wrapper">
+                <div class="comments__name">Delores G. Roberts</div>
+                <div class="comments__date">Add 11 Oct 2020</div>
+              </div>
+              <div class="comments__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                  convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos. Suspendisse orci sem, ultrices </p>
+              </div>
+              <button class="comments__btn" type="button">Reply</button>
+            </div>
+          </div>
+
+          <div class="comments__box comments__box--reply">
+            <img class="comments__img" src="images/user2.jpg" alt="user image" width="100" height="100">
+            <div class="comments__box-info">
+              <div class="comments__info-wrapper">
+                <div class="comments__name">Delores G. Roberts</div>
+                <div class="comments__date">Add 11 Oct 2020</div>
+              </div>
+              <div class="comments__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                  convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos. Suspendisse orci sem, ultrices </p>
+              </div>
+              <button class="comments__btn" type="button">Reply</button>
+            </div>
+          </div>
+
+          <div class="comments__box">
+            <img class="comments__img" src="images/user3.jpg" alt="user image" width="100" height="100">
+            <div class="comments__box-info">
+              <div class="comments__info-wrapper">
+                <div class="comments__name">Delores G. Roberts</div>
+                <div class="comments__date">Add 11 Oct 2020</div>
+              </div>
+              <div class="comments__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                  convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos. Suspendisse orci sem, ultrices </p>
+              </div>
+              <button class="comments__btn" type="button">Reply</button>
+            </div>
+          </div>
+
+          <div class="comments__box">
+            <img class="comments__img" src="images/user1.jpg" alt="user image" width="100" height="100">
+            <div class="comments__box-info">
+              <div class="comments__info-wrapper">
+                <div class="comments__name">Delores G. Roberts</div>
+                <div class="comments__date">Add 11 Oct 2020</div>
+              </div>
+              <div class="comments__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                  convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos. Suspendisse orci sem, ultrices </p>
+              </div>
+              <button class="comments__btn" type="button">Reply</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <form class="comments__form" action="#">
+          <h4 class="comments__title">Leave a Comment</h4>
+          <div class="comments__form-wrapper">
+            <div class="comments__label-box">
+              <label class="comments__label" for="comments__username">
+                <span class="sr-only">Enter your name</span>
+              </label>
+              <input class="comments__input comments__input--user" type="text" id="comments__username"
+                name="comments__username" placeholder="Name">
+            </div>
+            <div class="comments__label-box">
+              <label class="comments__label comments__label--email" for="comments__email">
+                <span class="sr-only">Enter your email</span>
+              </label>
+              <input class="comments__input comments__input--email" type="email" id="comments__email"
+                name="comments__email" placeholder="Email">
+            </div>
+          </div>
+          <div class="comments__label-box">
+            <label class="comments__label comments__label--comment" for="comments__text">
+              <span class="sr-only">Enter your comment</span>
+            </label>
+            <textarea class="comments__textarea" name="comments__text" id="comments__text" placeholder="Comment"
+              required></textarea>
+          </div>
+          <button class="comments__form-btn btn btn--dark" type="submit">post comment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+         <div class="products-related">
+   <h3 class="products-related__title title">Related products</h3>
+   <ul class="products-related__slider">
+
+     <li class="products-related__item">
+       <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/6.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+     </li>
+
+     <li class="products-related__item">
+       <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/2.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+     </li>
+
+     <li class="products-related__item">
+       <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/3.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+     </li>
+
+     <li class="products-related__item">
+       <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/5.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+     </li>
+
+     <li class="products-related__item">
+       <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/5.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+     </li>
+
+     <li class="products-related__item">
+       <article class="product-card">
+  <div class="product-card__img-box">
+    <img class="product-card__img" src="images/products-week/5.png" alt="chair" width="240" height="210">
+    <div class="product-card__link-box">
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#search-card"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="product-card__info">
+    <h3 class="product-card__title">Wooden chair</h3>
+    <div class="product-card__rating" data-rateyo-rating="4">
+      <span class="sr-only">Rating</span>
+    </div>
+    <div class="product-card__price">$29.00</div>
+
+    <div class="product-card__text">
+      <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__link-box-list">
+      <a class="product-card__link product-card__link--cart" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#cart-card"></use>
+        </svg>
+        <span class="sr-only">Add to cart</span>
+      </a>
+      <a class="product-card__link" href="#">
+        <svg width="22" height="18">
+          <use xlink:href="images/sprite.svg#favorite-card"></use>
+        </svg>
+        <span class="sr-only">Add to favorite</span>
+      </a>
+    </div>
+  </div>
+</article>
+     </li>
+   </ul>
+ </div>
+
+      </div>
+    </div>
+  </section>
+
+    <section class="blog">
+    <div class="container">
+      <div class="blog__top">
+        <h2 class="title">Our Insights & Articles</h2>
+        <a class="blog__link" href="#">View All</a>
+      </div>
+      <ul class="blog__items">
+        <li class="blog__item">
+          <a class="blog__item-link" href="#">
+            <img class="blog__img" src="images/blog/1.jpeg" alt="interior">
+            <span class="blog__label">news</span>
+            <div class="blog__info">
+              <h4 class="blog__item-title">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam</h4>
+              <div class="blog-info">
+                <div class="blog-info__date">28 january, 2020</div>
+                <div class=" blog-info__author">by admin</div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="blog__item">
+          <a class="blog__item-link" href="#">
+            <img class="blog__img" src="images/blog/2.jpeg" alt="interior">
+            <span class="blog__label">news</span>
+            <div class="blog__info">
+              <h4 class="blog__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore</h4>
+              <div class="blog-info">
+                <div class="blog-info__date">28 january, 2020</div>
+                <div class=" blog-info__author">by admin</div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="blog__item">
+          <a class="blog__item-link" href="#">
+            <img class="blog__img" src="images/blog/3.jpeg" alt="interior">
+            <span class="blog__label">news</span>
+            <div class="blog__info">
+              <h4 class="blog__item-title">Rncididunt ut labore et dolore magna aliqua. Ut enim</h4>
+              <div class="blog-info">
+                <div class="blog-info__date">28 january, 2020</div>
+                <div class=" blog-info__author">by admin</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+    <div class="partners">
+    <div class="container">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img class="partners__img" src="images/partners/1.png" alt="logo" width="82" height="84">
+        </li>
+        <li class="partners__item">
+          <img class="partners__img" src="images/partners/2.png" alt="KMN Consulting logo" width="151" height="84">
+        </li>
+        <li class="partners__item">
+          <img class="partners__img" src="images/partners/3.png" alt="logo" width="150" height="84">
+        </li>
+        <li class="partners__item">
+          <img class="partners__img" src="images/partners/4.png" alt="logo" width="167" height="84">
+        </li>
+        <li class="partners__item">
+          <img class="partners__img" src="images/partners/5.png" alt="logo" width="87" height="84">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__box footer__box-contact">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo" width="148" height="39">
+        </a>
+        <div class="footer__contact">
+          <span>address:</span>
+          4772 Wines Lane Houston, TX 77032
+        </div>
+        <div class="footer__contact">
+          <span>telephone:</span>
+          +832-347-5843
+        </div>
+        <div class="footer__contact">
+          <span>email:</span>
+          contact@Glee.com
+        </div>
+      </div>
+      <div class="footer__box">
+        <h5 class="footer__title">Services</h5>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Return policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="blog.html">Our blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="contact.html">Contact us</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="tos.html">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <h6 class="footer__title">account</h6>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="login.html">Your account</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Checkout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box footer__box-form">
+        <h5 class="footer__title">Newsletter</h5>
+        <p class="footer__descr">Subscribe by our newsletter and get update protidin.</p>
+        <form class="footer__form" action="#">
+          <label class="sr-only" for="form_email">E-mail</label>
+          <input class="footer__input" type="email" name="email" id="form_email" placeholder="Email address" required>
+          <button class="btn footer__btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">©2020 CopyRight Example. All rights reserved.</div>
+      <ul class="footer__bottom-list">
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="index.html">Home</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="blog.html">Blog</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>   <script src="js/main.min.js"></script>
+  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBSfjMT3dtcvGDf-ZfX6G5OvSaX83bNfqM", v: "weekly"});</script>
+</body>
+
+</html>
